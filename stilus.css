@@ -1,0 +1,102 @@
+header {
+    overflow: hidden;
+    /*A kilógó részeket levágja*/
+}
+
+header figure {
+    position: relative;
+    width: 500%;
+    /*500 mert 5 * 100 széles képek*/
+    margin: 0%;
+    animation: 20s csuszka infinite;
+    /*Az csúszás   bármilyen név jó / ideje és ismétlése */
+}
+
+header figure img {
+    float: right;
+    /*Milyen irányba csússzanak a képek.
+    Ha bal, akkor - % fog kelleni*/
+    width: 20%;
+}
+/*FIGYELJ a %-RA*/
+@keyframes csuszka {
+    0% {
+        right: 0;
+    }
+    20% {
+        right: 0;
+    }
+    25% {
+        right: 100%;
+    }
+    45% {
+        right: 100%;
+    }
+    50% {
+        right: 200%;
+    }
+    70% {
+        right: 200%;
+    }
+    75% {
+        right: 300%;
+    }
+    95% {
+        right: 300%;
+    }
+    100% {
+        right: 400%;
+    }
+}
+
+article .kicsiSlider {
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    max-height: 200px;
+}
+article .kicsiSlider figure{
+    position: relative;
+    width: 1000%;    
+    margin: 0%;
+    animation: 40s kicsicsuszka infinite;    
+}
+.kicsiSlider img {
+    float: right;    
+    width: calc(100% / 10);
+}
+@keyframes kicsicsuszka {
+    0% {
+        right: 0;
+    }
+    10% {
+        right: 100%;
+    }
+    20% {
+        right: 200%;
+    }
+    30% {
+        right: 300%;
+    }
+    40% {
+        right: 400%;
+    }
+    50% {
+        right: 500%;
+    }
+    60% {
+        right: 600%;
+    }
+    70% {
+        right: 700%;
+    }   
+    80% {
+        right: 800%;
+    }
+    90% {
+        right: 900%;
+    } 
+    100% {
+        right: 800%;
+    }
+}
